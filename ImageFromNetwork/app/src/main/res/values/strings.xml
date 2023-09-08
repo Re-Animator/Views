@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ImageFromNetwork</string>
+    <string name="enter_url_of_image_to_download">Enter url of image to download</string>
+    <string name="image_url">Image URL</string>
+    <string name="download">Download</string>
+    <string name="downloaded_image">Downloaded image</string>
+</resources>
