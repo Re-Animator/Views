@@ -2,4 +2,51 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorBackground">#c6c4c3></color>
+
+    <color name="defaultWhite">#FFFFFF</color>
+    <!--    Austria-->
+    <color name="austrianRed">#ED2939</color>
+    <color name="austrianWhite">@color/defaultWhite</color>
+    <!--    -->
+
+    <!--    Italy-->
+    <color name="italianGreen">#008C45</color>
+    <color name="italianWhite">#F4F5F0</color>
+    <color name="italianRed">#CD212A</color>
+    <!--    -->
+
+    <!--    Thailand-->
+    <color name="thailandRed">#A51931</color>
+    <color name="thailandWhite">#F4F5F8</color>
+    <color name="thailandPurple">#2D2A4A</color>
+    <!--    -->
+
+    <!--    Poland-->
+    <color name="polandWhite">@color/defaultWhite</color>
+    <color name="polandRed">#DC143C</color>
+    <!--    -->
+
+    <!--    Colombia-->
+    <color name="colombianYellow">#FCD116</color>
+    <color name="colombianBlue">#003893</color>
+    <color name="colombianRed">#CE1126</color>
+    <!--    -->
+
+    <!--    Madagascar-->
+    <color name="madagascarWhite">@color/defaultWhite</color>
+    <color name="madagascarGreen">#007E3A</color>
+    <color name="madagascarRed">#FC3D32</color>
+    <!--    -->
+
+    <!--    Denmark-->
+    <color name="denmarkRed">#C60C30</color>
+    <color name="denmarkWhite">@color/defaultWhite</color>
+    <!--    -->
+
+    <!--    Switzerland-->
+    <color name="switzerlandRed">#D52B1E</color>
+    <color name="switzerlandWhite">@color/defaultWhite</color>
+    <!--    -->
+
 </resources>

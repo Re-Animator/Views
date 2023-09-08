@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:baselineAligned="false"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/first_row"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:padding="12dp">
 
@@ -19,13 +19,14 @@
             android:id="@+id/austria_flag"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
             android:background="@color/austrianRed"
             android:gravity="center"
             android:orientation="vertical"
             android:weightSum="3"
-            app:layout_constraintBottom_toTopOf="@id/italy_flag"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="3:2"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/italy_flag"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -41,16 +42,17 @@
             android:id="@+id/italy_flag"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
             android:background="@color/italianGreen"
             android:baselineAligned="false"
             android:gravity="end"
             android:orientation="horizontal"
             android:weightSum="3"
-            app:layout_constraintBottom_toTopOf="@id/thailand_flag"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="3:2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/austria_flag">
+            app:layout_constraintEnd_toStartOf="@id/thailand_flag"
+            app:layout_constraintStart_toEndOf="@id/austria_flag"
+            app:layout_constraintTop_toTopOf="parent">
 
             <FrameLayout
                 android:layout_width="0dp"
@@ -69,15 +71,16 @@
             android:id="@+id/thailand_flag"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
             android:background="@color/thailandRed"
             android:gravity="center"
             android:orientation="vertical"
             android:weightSum="6"
-            app:layout_constraintBottom_toTopOf="@id/poland_flag"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="3:2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/italy_flag">
+            app:layout_constraintEnd_toStartOf="@id/poland_flag"
+            app:layout_constraintStart_toEndOf="@id/italy_flag"
+            app:layout_constraintTop_toTopOf="parent">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -110,8 +113,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="8:5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/thailand_flag">
+            app:layout_constraintStart_toEndOf="@id/thailand_flag"
+            app:layout_constraintTop_toTopOf="parent">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -124,8 +127,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/second_row"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:padding="12dp">
 
@@ -133,13 +136,14 @@
             android:id="@+id/colombia_flag"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
             android:background="@color/colombianYellow"
             android:gravity="bottom"
             android:orientation="vertical"
             android:weightSum="4"
-            app:layout_constraintBottom_toTopOf="@id/madagascar_flag"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="3:2"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/madagascar_flag"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -160,16 +164,17 @@
             android:id="@+id/madagascar_flag"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
             android:background="@color/madagascarWhite"
             android:baselineAligned="false"
             android:gravity="end"
             android:orientation="horizontal"
             android:weightSum="3"
-            app:layout_constraintBottom_toTopOf="@id/denmark_flag"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="3:2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/colombia_flag">
+            app:layout_constraintEnd_toStartOf="@id/denmark_flag"
+            app:layout_constraintStart_toEndOf="@id/colombia_flag"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -193,16 +198,17 @@
             android:id="@+id/denmark_flag"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
             android:background="@color/denmarkRed"
             android:baselineAligned="false"
             android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="10"
-            app:layout_constraintBottom_toTopOf="@id/switzerland_flag"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="37:28"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/madagascar_flag">
+            app:layout_constraintEnd_toStartOf="@id/switzerland_flag"
+            app:layout_constraintStart_toEndOf="@id/madagascar_flag"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -250,6 +256,7 @@
             android:id="@+id/switzerland_flag"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
             android:background="@color/switzerlandRed"
             android:gravity="end"
             android:orientation="vertical"
@@ -257,8 +264,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/denmark_flag">
+            app:layout_constraintStart_toEndOf="@id/denmark_flag"
+            app:layout_constraintTop_toTopOf="parent">
 
             <FrameLayout
                 android:layout_width="match_parent"
