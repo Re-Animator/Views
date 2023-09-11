@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AnalogClock</string>
+    <string name="thin">Thin</string>
+    <string name="normal">Normal</string>
+    <string name="thick">Thick</string>
+    <string name="change">Change</string>
+    <string name="_00ff37">#00FF37</string>
+    <string name="color_of_second_hand_in_hex">Color of second hand in hex:</string>
+</resources>
